@@ -22,11 +22,11 @@
     "files": []
   },
   "index.tsx -> ../components/ClientApp": {
-    "id": 1784,
+    "id": 2647,
     "files": [
       "static/chunks/ba582a67.a94d5c330fdefc36.js",
       "static/chunks/380.1627c6609b319261.js",
-      "static/chunks/784.bb25043dbaf5da4d.js"
+      "static/chunks/647.a6894dd7a600a312.js"
     ]
   }
 }
