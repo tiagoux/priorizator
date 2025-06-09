@@ -62,7 +62,7 @@ export function HomePage() {
       if (featuresData) {
         const stats: Record<string, ProjectStats> = {};
         
-        projectsData.forEach(project => {
+        projectsData.forEach((project: any) => {
           const projectFeatures = featuresData.filter(f => f.project_id === project.id);
           stats[project.id] = {
             total: projectFeatures.length,

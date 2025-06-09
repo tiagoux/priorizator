@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
 import { Vote, Users, Lock, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { AuthPage } from '../components/AuthPage';
 
 export function LandingPage() {
-  const navigate = useNavigate();
   const [showAuthModal, setShowAuthModal] = useState(false);
 
   const handleAuthSuccess = () => {
     setShowAuthModal(false);
-    navigate('/');
+    // Simple redirect for testing - can be improved later
+    window.location.href = '/';
   };
 
   return (

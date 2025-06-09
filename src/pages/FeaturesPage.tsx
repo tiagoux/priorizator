@@ -286,7 +286,7 @@ export function FeaturesPage() {
     }
   };
 
-  const formatVoterName = (voter: { user_metadata: UserMetadata }) => {
+  const formatVoterName = (voter: any) => {
     if (voter.user_metadata?.first_name) {
       return `${voter.user_metadata.first_name} ${voter.user_metadata.last_name || ''}`.trim();
     }
