@@ -18,6 +18,7 @@ if (supabaseUrl && supabaseAnonKey &&
       getSession: () => Promise.resolve({ data: { session: null }, error: null }),
       onAuthStateChange: () => ({ data: { subscription: { unsubscribe: () => {} } } }),
       signInWithOAuth: () => Promise.resolve({ data: null, error: new Error('Supabase not configured') }),
+      signInWithOtp: () => Promise.resolve({ data: null, error: new Error('Supabase not configured') }),
       signOut: () => Promise.resolve({ error: null })
     },
     from: () => ({
